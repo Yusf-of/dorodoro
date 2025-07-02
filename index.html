@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cute Sticker Page</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #dfc8ff;
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        position: relative;
+        overflow: hidden;
+      }
+      audio {
+        opacity: 0;
+      }
+      .sticker {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+      }
+      .flowers {
+        display: flex;
+        padding-top: 40px;
+      }
+      .flowers img {
+        width: 400px;
+      }
+      .flowers .purple img {
+        transform: scaleX(-1);
+      }
+
+      .top-left {
+        top: 20px;
+        left: 20px;
+      }
+      .top-right {
+        top: 20px;
+        right: 20px;
+      }
+      .bottom-left {
+        bottom: 20px;
+        left: 20px;
+      }
+      .bottom-right {
+        bottom: 20px;
+        right: 20px;
+      }
+      .hamtarubtn {
+        padding: 20px 30px;
+        margin-top: 40px;
+        border-radius: 5px;
+        background: #8162ff;
+        color: #fff;
+        font-size: 20px;
+        border: none;
+      }
+
+      .text-box {
+        background-color: #fdddff;
+        border-radius: 20px;
+        padding: 15px;
+        text-align: center;
+        font-size: 1.5rem;
+        max-width: 80%;
+        z-index: 1;
+        color: #7a2a9b;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="imgs/nob1.jpg" alt="sticker" class="sticker bottom-left" />
+    <img src="imgs/nob2.jpg" alt="sticker" class="sticker top-right" />
+    <img src="imgs/nob4.jpg" alt="sticker" class="sticker top-left" />
+    <img src="imgs/nob3.jpg" alt="sticker" class="sticker bottom-right" />
+
+    <div class="text-box">
+      <span>Tarjama ta9ol : Be My Shadow ! 💜✨</span>
+      <div class="flowers">
+        <div class="purple">
+          <img src="imgs/nobs.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+    <button
+      class="hamtarubtn"
+      onclick="document.getElementById('audio').play()"
+    >
+        idghatii 3alayaa !
+    </button>
+
+    <audio id="audio" controls>
+      <source src="hamtaru.mp3" type="audio/mp3" />
+    </audio>
+  </body>
+</html>
